@@ -1,0 +1,36 @@
+# RAG Learn 配置
+# 复制此文件为 settings.yaml 并填入你的 API Key
+
+llm:
+  provider: "dashscope"
+  model: "qwen-plus"
+  api_key: "sk-ws-H.EERXLXH.xIF0.MEUCIFFiKYJV_OJBSCxhsf-RUwuYBgwRMtmyPo2SqTgd2m-FAiEA2Uidr-5lzwZkRRSSd8pjg5cCFsu9ic-RwBPgNC5-kiI"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  temperature: 0.0
+  max_tokens: 4096
+
+embedding:
+  provider: "dashscope"
+  model: "text-embedding-v1"
+  api_key: "sk-ws-H.EERXLXH.xIF0.MEUCIFFiKYJV_OJBSCxhsf-RUwuYBgwRMtmyPo2SqTgd2m-FAiEA2Uidr-5lzwZkRRSSd8pjg5cCFsu9ic-RwBPgNC5-kiI"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
+vector_store:
+  provider: "chroma"
+  persist_directory: "./data/db/chroma"
+  collection_name: "knowledge_hub"
+
+retrieval:
+  dense_top_k: 20
+  fusion_top_k: 10
+
+rerank:
+  enabled: true
+  provider: "llm"
+  top_k: 5
+
+ingestion:
+  chunk_size: 500
+  chunk_overlap: 50
+  splitter: "recursive"
+  batch_size: 20

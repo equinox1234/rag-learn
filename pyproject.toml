@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "rag-learn"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=0.5.0",
+    "openai>=1.0.0",
+    "markitdown",
+    "pyyaml",
+    "langchain-text-splitters",
+    "jieba",
+]

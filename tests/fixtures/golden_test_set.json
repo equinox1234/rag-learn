@@ -1,0 +1,27 @@
+[
+    {
+        "query": "What is VPD PbSe?",
+        "relevant_text": "Vapor Phase Deposition PbSe technology (aka VPD PbSe)",
+        "expected_answer": "VPD PbSe is a vapor phase deposited lead selenide infrared detector material"
+    },
+    {
+        "query": "What is the resolution of the FPA?",
+        "relevant_text": "80x80 VPD PbSe FPA",
+        "expected_answer": "80x80 pixels"
+    },
+    {
+        "query": "Is the detector cooled or uncooled?",
+        "relevant_text": "uncooled (no thermal) MWIR FPA",
+        "expected_answer": "uncooled"
+    },
+    {
+        "query": "What is the diameter of the Si wafers used?",
+        "relevant_text": "200-mm Si wafers",
+        "expected_answer": "200 mm"
+    },
+    {
+        "query": "What company developed this technology?",
+        "relevant_text": "New Infrared Technologies S.L.",
+        "expected_answer": "New Infrared Technologies S.L."
+    }
+]
